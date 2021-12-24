@@ -9,6 +9,6 @@ class Card:
      height = 7
     
     def __init__(self, pattern, number):
-        # 객체 변수 => 각 카드 한장 한장이 갖는 모양 / 숫자
+         # 객체 변수 => 각 카드 한장 한장이 갖는 모양 / 숫자
         self.pattern = pattern
         self.number = number
