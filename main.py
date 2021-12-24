@@ -15,3 +15,10 @@ if book1.rent_book_to_user(user1):
     print(f'[{book1.title}] 도서를 {user1.name}에게 대여했습니다.')
 else:
     print(f'[{book1.title}] 도서를 {user1.name}에게 대여하지 못했습니다.')    
+    
+    
+book2 = Book('고가의 책', 20000, 15)
+
+print( book2.rent_book_to_user(user1) )
+
+user1.print_user_info()
