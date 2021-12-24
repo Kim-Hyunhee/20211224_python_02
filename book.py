@@ -27,5 +27,10 @@ class Book:
         is_rent_available = (self.rent_user == None)
         
         # 모든 검사를 통과해야 True 리턴
-        
-        return is_point_ok and is_age_ok and is_rent_available
+             
+        if is_point_ok and is_age_ok and is_rent_available:
+            # 이 책의 대여자가 user다 라고 기록
+            self.rent_user = user
+            return True
+        else:
+            return False
