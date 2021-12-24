@@ -8,3 +8,10 @@ user1 = User('김성인', 1990, 20000)
 user1.print_user_info()
 
 book1.print_book_info()
+
+# book1을 김성인 에게 빌려줘보자
+
+if book1.rent_book_to_user(user1):
+    print(f'[{book1.title}] 도서를 {user1.name}에게 대여했습니다.')
+else:
+    print(f'[{book1.title}] 도서를 {user1.name}에게 대여하지 못했습니다.')    
