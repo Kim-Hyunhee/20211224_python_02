@@ -5,5 +5,11 @@
 def add(num1, num2):
     print(num1+ num2)
     
+def mul(num1, num2):
+    print(num1 * num2)
+    
+def div(num1, num2):
+    print(num1 / num2)
+    
 # 실행 내용을 적어보자
 print('여기는 my_math 모듈입니다.')
