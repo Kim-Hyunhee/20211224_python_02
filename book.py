@@ -15,3 +15,17 @@ class Book:
             pass
         else:
             print('대여해 간 사람이 없습니다.')
+            
+    def rent_book_to_user(self, user):
+        
+        # 검사 해야하는 각 항목들의 검사 결과를 변수에 담아두자
+        
+        is_point_ok = (user.point >= self.rent_fee)
+
+        is_age_ok = (user.get_age(2021) >= self.limit_age)
+        
+        is_rent_available = (self.rent_user == None)
+        
+        # 모든 검사를 통과해야 True 리턴
+        
+        return is_point_ok and is_age_ok and is_rent_available
